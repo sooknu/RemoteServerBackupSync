@@ -2,7 +2,7 @@
 set -e  # Exit immediately on errors outside conditionals
 
 # ========== CONFIG SECTION ==========
-BACKUP_HOST="ubuntu@99.46.81.50"    # Backup server username@hostname or IP
+BACKUP_HOST="ubuntu@99.46.81.50"    # Target Backup server username@IP
 SOURCE_DIR="/home/ubuntu"           # Local path to folders
 SERVICES=("velocity" "mc1" "mc2" "mc3")  # Systemd services
 FOLDERS=("velocity" "mc1" "mc2" "mc3")    # Folders to sync
@@ -13,8 +13,8 @@ TMP_DIR="/tmp/systemd_backup"       # Temporary storage for systemd files
 LOG_FILE="/home/ubuntu/backup_mirror.log"  # Log file location
 
 # Database credentials (update with your actual credentials)
-DB_USER="sahid"          
-DB_PASSWORD="NX6ri4p5!"
+DB_USER="user"          
+DB_PASSWORD="password"
 DB_HOST="localhost"
 DB_DUMP_CMD="/usr/bin/mariadb-dump"  # Recommended dump command
 
